@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:12.3
+    ports:
+      - "9977:9977"
+    environment:
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: testpassword
+      POSTGRES_DB: postgres
